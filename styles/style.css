@@ -1,7 +1,7 @@
 .envelope-screen {
   position: fixed;
   inset: 0;
-  background-image: url("../assets/img/fondointro.jpg");
+  background-image: url("../assets/img/fondosobre1.jpg");
   background-size: cover;
   background-position: center;
   backdrop-filter: blur(10px);
@@ -24,7 +24,7 @@
   border-radius: 10px;
 
   /* borde dorado principal */
-  border: 1px solid #c9a44c;
+  border: 1px solid #b7b7b7;
 
   /* brillo metálico */
   box-shadow: 0 30px 100px rgb(0, 0, 0);
@@ -36,7 +36,7 @@
   inset: 10px;
   border-radius: 10px;
 
-  border: 2px solid rgba(201, 164, 76, 0.7);
+  border: 2px solid rgba(73, 70, 63, 0.7);
 
   pointer-events: none;
 }
@@ -155,6 +155,8 @@
   object-fit: cover;
   display: block;
   margin: 0 auto;
+  filter: blur(1.5px);
+  transform: scale(1.1);
 }
 
 .titulo {
@@ -198,13 +200,15 @@
   width: calc(100% - 80px);
   max-width: 420px;
 
-  border: 2px solid var(--gold-elegant);
-  outline: 4px solid rgba(12, 30, 194, 0.25);
+  border: 2px solid var(--musica-card);
+  outline: 4px solid rgba(12, 194, 194, 0.25);
 
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
   text-align: center;
 
   position: relative;
+
+  z-index: 1;
 }
 
 .album-art {
@@ -215,14 +219,14 @@
   background-position: top;
 
   border: 1px solid var(--gold-elegant);
-  outline: 3px solid rgba(76, 101, 201, 0.25);
+  outline: 3px solid rgba(76, 172, 201, 0.25);
 
   margin-bottom: 1.5rem;
 }
 
 .song-title {
   font-family: var(--font-titulos);
-  color: var(--gray-pearl);
+  color: var(--musica-card);
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -254,7 +258,7 @@
 }
 
 .play-button:hover {
-  background: var(--rose-main);
+  background: var(--musica-card);
   color: white;
 }
 
@@ -385,6 +389,10 @@
   line-height: 1.7rem;
   font-size: 1rem;
   font-family: var(--font-texto);
+}
+
+.padres li {
+  margin-bottom: -100px;
 }
 
 .frase-p,
@@ -539,7 +547,7 @@
   font-family: var(--font-subtitulos);
   font-size: 2rem;
   font-weight: 400;
-  color: var(--rose);
+  color: var(--rose-light);
   text-align: center;
   margin-bottom: 0;
 }
@@ -572,7 +580,7 @@
 }
 
 .box-place {
-  background: var(--rose-light); /* suave variación de fondo */
+  background: var(--bg-card); /* suave variación de fondo */
   border: 2px solid var(--rose-main); /* borde dorado principal */
   border-radius: 20px;
   padding: 2rem;
@@ -660,7 +668,7 @@
 }
 
 .box-place-salon {
-  background: var(--rose-light); /* suave variación de fondo */
+  background: var(--bg-card); /* suave variación de fondo */
   border: 2px solid var(--rose-main); /* borde dorado principal */
   border-radius: 20px;
   padding: 2rem;
@@ -754,7 +762,7 @@
   --------------------------*/
 .section-message {
   position: relative;
-  background-image: url("../assets/img/fondointro.jpg");
+  background-image: url("../assets/img/fondosobre1.jpg");
   background-position: center;
   background-size: cover;
   padding: 3rem 1rem 4rem;
@@ -894,7 +902,7 @@ footer a:hover {
     0 8px 20px rgba(0, 0, 0, 0.18);
 
   /* marco noble invisible */
-  outline: 1px solid rgba(212, 175, 55, 0.726);
+  outline: 1px solid rgba(55, 188, 212, 0.726);
   outline-offset: 8px;
 
   transition: all 0.7s ease;
@@ -965,4 +973,118 @@ footer a:hover {
 
 .palabras b {
   color: var(--rose);
+}
+
+.timeline {
+  padding: 50px 20px;
+  text-align: center;
+  background-image: url("../assets/img/fondo3.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -90px;
+  margin-top: -50px;
+
+  -webkit-mask-image: linear-gradient(to top, black 80%, transparent 100%);
+  mask-image: linear-gradient(to top, black 80%, transparent 100%);
+}
+
+.timeline h2 {
+  font-size: 2.5rem;
+  color: #5b3a29;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 45px;
+  margin-top: 20px;
+}
+
+/* Poste central */
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  background-image: url("../assets/img/madera2.png");
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+/* Reloj del conejo */
+
+.event {
+  position: relative;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.event.left {
+  left: 0;
+}
+
+.event.right {
+  left: 50%;
+}
+
+.sign {
+  display: inline-block;
+  background-image: url("../assets/img/madera.jpg");
+  color: white;
+  padding: 15px 25px;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 3px 3px 8px rgb(0, 0, 0);
+  max-width: 250px;
+}
+
+/* Punta de flecha */
+.event.left .sign::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../assets/img/madera.jpg");
+  background-size: cover;
+  border-left: 20px solid #ba9471;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.event.right .sign::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right: 20px solid #664b31;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sign p {
+  margin: 0;
+}
+
+.img-alice img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+  margin-bottom: -40px;
+  z-index: 10000;
 }

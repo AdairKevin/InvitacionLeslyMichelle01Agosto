@@ -170,7 +170,7 @@
 
 .titulo h1 {
   font-family: var(--font-titulos);
-  font-size: 3.6rem;
+  font-size: 4.5rem;
   text-align: center;
   background: var(--gradient-titulo);
   -webkit-background-clip: text;
@@ -214,8 +214,7 @@
 .album-art {
   width: 100%;
   height: 160px;
-  background: url("../assets/img/5d7a0cc9bf486d8c23c8c9981fba935d.webp")
-    center/cover no-repeat;
+  background: url("../assets/img/musica.webp") center/cover no-repeat;
   background-position: top;
 
   border: 1px solid var(--gold-elegant);
@@ -278,7 +277,7 @@
 }
 
 .music-card::before {
-  content: "❦";
+  content: "♣";
   position: absolute;
   top: -14px;
   left: 50%;
@@ -536,7 +535,7 @@
 }
 
 .date-time li::before {
-  content: "❦"; /* pequeño adorno Bridgerton */
+  content: "♠"; /* pequeño adorno Bridgerton */
   display: block;
   color: var(--gold-elegant);
   font-size: 1rem;
@@ -751,7 +750,7 @@
 }
 
 .info-block::after {
-  content: "❦";
+  content: "♥";
   font-size: 1rem;
   margin-top: 0.5rem;
   opacity: 0.6;
